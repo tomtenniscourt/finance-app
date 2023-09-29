@@ -1,4 +1,7 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
+  max-width: 100%;
+  /* Set max width to 100% of the screen */
 }
-

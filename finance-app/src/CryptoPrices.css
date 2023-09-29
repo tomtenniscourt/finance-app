@@ -1,0 +1,50 @@
+/* CryptoPrices.css */
+.App {
+    text-align: center;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.crypto-horizontal-list-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.crypto-horizontal-list {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    /* Adjust the duration as needed */
+}
+
+.crypto-info-horizontal {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 3px;
+    width: 150px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.crypto-name {
+    font-weight: bold;
+}
+
+.crypto-price {
+    margin: 2px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 15));
+        /* Adjust for the number of items */
+    }
+}

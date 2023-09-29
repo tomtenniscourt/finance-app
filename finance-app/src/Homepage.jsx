@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-import Homepage from "./Homepage";
 import Crypto from "./CryptoPrices";
 
-function App() {
+function Homepage() {
   return (
-    <div className="App">
-      <Crypto />
-      <Homepage />
+    <div className="Homepage">
+      <h1>Finance App</h1>
     </div>
   );
 }
 
-export default App;
+export default Homepage;
